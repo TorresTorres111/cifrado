@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- xicon -->
+    <link rel="shortcut icon" href="./images/shield.png" type="image/x-icon">
+    <title>Cifrado</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap" rel="stylesheet">
+
+</head>
+
+
+
+<body class="dark">
+
+
+    <!-- header -->
+    <header>
+        <a href="#" class="logo">ttdy 111</a>
+        <div class="righSide">
+            <div class="btns dayNight">
+                <ion-icon name="moon-outline"></ion-icon>
+                <ion-icon name="sunny-outline"></ion-icon>
+            </div>
+            <div class="btns menuToggle">
+                <ion-icon name="menu-outline"></ion-icon>
+                <ion-icon name="close-outline"></ion-icon>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- main -->
+    <section class="main" id="home">
+        <!-- <video src="./images/videoBx.mp4" autoplay loop muted type="mp4"></video> -->
+        <img src="./images/fondo.jpg" alt="" class="mask">
+        <h2>Cifrado</h2>
+        <p class="text"> ˂ / ˃  &nbsp &nbsp Seguridad Web y Aplicaiones </p>
+        <ul class="sci">
+            <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-discord"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-google"></ion-icon></a></li>
+        </ul>
+    </section>
+
+
+    <!-- navigation -->
+    <ul class="navigation">
+        <li><a href="#home" id="homeLink">Start</a></li>
+        <li><a href="#cesar" id="cesarLink">Cesar</a></li>
+        <li><a href="#vigenere" id="vigenereLink">Vigenere</a></li>
+    </ul>
+
+
+    <!-- cifrado -->
+    <section class="cifrado" id="cesar">
+        <h2>Cesar</h2>
+        <div class="contenedor">
+            <div class="entradaDatos">
+                <p class="error" id="errTxtC"></p>
+                <input type="text" placeholder="texto" id="txtC">
+                <p class="error" id="errNumC"></p>
+                <input type="number" placeholder="Desplazamiento" id="numC">
+            </div>
+
+            <div class="seleccion">
+                <button id="cifrarC">Cifrar</button>
+                <button id="descifrarC">Descifrar</button>
+            </div>
+
+            <div class="salida">
+                <input type="text" readonly value="Aqui aparecera el texto cifrado/descifrado" id="salidaC">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- cifrado -->
+    <section class="cifrado" id="vigenere">
+        <h2>Vigenere</h2>
+        <div class="contenedor">
+            <div class="entradaDatos">
+                <p class="error" id="errTxtV"></p>
+                <input type="text" placeholder="Texto" id="txtV">
+                <p class="error" id="errKeyV"></p>
+                <input type="text" placeholder="Llave" id="keyV">
+            </div>
+
+            <div class="seleccion">
+                <button id="cifrarV">Cifrar</button>
+                <button id="descifrarV">Descifrar</button>
+            </div>
+
+            <div class="salida">
+                <input type="text" readonly value="Aqui aparecera el texto cifrado/descifrado" id="salidaV">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- scripts base -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./js/main.js"></script>
+
+    <!-- scripts -->
+    <script src="./js/cesar.js"></script>
+    <script src="./js/vigenere.js"></script>
+
+
+</body>
+</html>
